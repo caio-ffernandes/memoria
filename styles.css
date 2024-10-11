@@ -1,0 +1,44 @@
+/* styles.css */
+
+.menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.memory-game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.card.flipped span {
+    visibility: visible;
+}
+
+.card.matched {
+    background-color: #0f0;
+    pointer-events: none;
+}
